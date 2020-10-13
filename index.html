@@ -1,39 +1,125 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title></title>
-        <link rel="stylesheet" type="text/css" href="styles.css"> 
-    </head>
-    <nav>
-        </ul>
-            <a href="about.html">ABOUT</a>
-            <a href="fees.html">FEES</a>
-            <a href="faq.html">FAQ</a>
-            <a href="testimonials.html">TESTIMONIALS</a>
-            <a href="marketplace.html">MARKETPLACE</a>
-            <a href="contact.html">CONTACT</a>
-        </ul>   
-    </nav>
-    <body>
-        <article>
-            <div id=column1>
-                <h2>FOR MAKERS</h2>
-                    <p>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+      <nav id="nav">
+              <a href="#">
+              <img src="images/thesis_logo.png" alt="Logo" width="110" height="auto">
+              </a>
+              
+          <ul>
+              <li><a href="#card-1">ABOUT</a></li>
+              <li><a href="#">FEES</a></li>
+              <li><a href="#banner">FAQ</a></li>
+              <li><a href="#">TESTIMONIALS</a></li>
+              <li><a href="#">CONTACT</a></li>
+          </ul>
+      </nav>
 
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1 style="font-size:50px"> LIMITED RUN </h1>
+            <p>We enable makers by facilitating safer purchasing</p>
+          <button>EXPLORE</button>
+        </div>
+      </div>
 
-            </div>
-            <div id=column2>
-                <h2>FOR BUYERS</h2>
+      <section id="card-1">
+				<ul>
+					<li class="card-1">
+						<img src="images/IMG_4295-E.jpg" alt="project-management" width="auto" height="350">
+						<h3>project management</h3>
+            <p>The most protective high-technology motorcycle jackets ever produced. And this is where we begin. 2.7kg total 
+              armored weight and 1.4mm avg thickness...</p>
+            <button>EXPLORE</button>
+					</li>
+					<li class="card-1">
+						<img src="images/IMG_4962.jpg" alt="communication" width="auto" height="350"> 
+						<h3>communication</h3>
+						<p>Hidden beneath the minimalist Kangaroo shell is one of the most complicated ready-to-wear fashion garments 
+              currently in manufacture...</p>
+              <button>EXPLORE</button>
+					</li>
+					<li class="card-1">
+						<img src="images/IMG_08a.jpg" alt="payment-processing" width="auto" height="350">
+						<h3>payment processing</h3>
+						<p>This is motorcycle gear completely re-engineered. The highest level of protection adapted to the language of 
+              contemporary fashion...</p>
+              <button>EXPLORE</button>
+					</li>
+				</ul>
+			</section>
 
+      <section id="banner">
+				<div class="banner-press">
+						<p>"It’s a combination of a group-buy mechanism, crowdfunding platform, and project management / communication software 
+              with a built in payment processor."
+            </p>
+            <p> —-------------
+            </p>
+        </div>
 
-            </div>
-    
-    
-        </article>
-    </body>
-    <footer>
-    
-    </footer>
-<script src="script.js" type="module"> </script>
+      </section>
 
+			<section id="card-4">
+				<div>
+          <h3>for makers</h3>
+          <p>Guarantee your order before you make. Project Management software works for you. Communicate with your buyers. Payment 
+            processing. Market to your community your way. Use our platform and/or API Integration for your own website. 
+          </p>
+        </div>
+        <div>
+          <img src="images/IMG_4587.jpg" alt="Armor" width="auto" height="450">
+        </div>
+      </section>
+
+			<section id="card-5">
+				<div>
+          <h3>for buyers</h3>
+          <p>Safer pre-purchasing through our escrow. Enforced communication and updates from Makers. We vet makers for you through 
+            our internal algorithms and show this in a ‘safe maker’ rating. Don’t pay until manufacturing starts. Lower prices than 
+            traditional retail.
+          </p>
+        </div>
+        <div>
+          <img src="images/01PPE.png" alt="Standards" width="auto" height="450">
+        </div>
+      </section>
+
+			<section id="contact">
+        <div class="container">
+          <h3> contact us:</h3> 
+          <form action="action_page.php">
+        
+            <label for="name">Name</label>
+            <input type="text" id="fname" name="name" placeholder="Your name..">
+        
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject..">
+        
+            <label for="region">Region</label>
+            <select id="region" name="region">
+              <option value="usa">USA</option>
+              <option value="canada">Canada</option>
+              <option value="australia">Australia</option>
+              <option value="europe">Europe</option>
+              <option value="asia">Asia</option>
+              <option value="africa">Africa</option>
+            </select>
+        
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <input type="submit" value="SUBMIT">
+        
+          </form>
+        </div>
+      </section>
+      <footer id="footer">
+        <p> thesis labs, inc. 2014 </p>
+      </footer>
+    <script src="script.js" type="module"></script>
+  </body>
 </html>

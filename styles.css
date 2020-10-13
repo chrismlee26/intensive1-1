@@ -7,7 +7,6 @@ body, html {
     line-height: 4ex;
     height: 100%;
     font-size: 2ex;
-    background-color: black;
 }
 
 nav {
@@ -27,13 +26,13 @@ nav ul a {
 
 nav a {
     text-decoration: underline;
-    color: #black;    /* color of nav #eee text*/
+    color: #eee;    /* color of nav #eee text*/
 }
 
 nav ul {
     display: flex;
     list-style: none;   /*this removes bullets */
-    text-shadow: 1px 1px black;  /* this is the shadows for nav link */
+    text-shadow: 1px 1px grey;  /* this is the shadows for nav link */
 }
 
 
@@ -41,8 +40,214 @@ nav ul a:hover {     /* this is the highlight for nav link */
     color: #eee;
 }
 
-article{
-    color: white;   
+.hero-image {
+    background-image: url(images/image_02.jpg); /* retaining the overlay just incase linear-gradient(#FFFFFF) 2%, rgba(#FFFFFF) .5%,   */
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4ex;
+    letter-spacing: 3px;
+}
+
+.hero-text h1 {
+    font-family: 'Baskerville';
+    font-weight: normal;
+    letter-spacing: 6px;
+}
+
+.hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+    font-size: .5ex;
+}
+
+.hero-text button:hover {
+    background-color: #555;
+    color: white;
+}
+
+#card-1 ul {
+    list-style: none;
+    margin: 0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#card-1 > h2 {
+    margin: 5em 2em 2em 2em;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.card-1 {
+    width: 650px;
+    margin: 12em 5em 12em 5em;
+    /* background-color: whitesmoke;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.05); */
+}
+
+.card-1 img {
+    width: 100%;
+    height: auto;
+}
+
+.card-1 h3 {
+    font-size: 2em;
+    font-family: 'baskerville';
+    font-weight: lighter;
+    letter-spacing: 14px;
+}
+
+.card-1 button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1ex;
+}
+
+.card-1 button:hover {
+    background-color: #555;
+    color: white;
+}
+
+#banner {  /* This part is for the photo */
+    background-image: url(images/IMG_3758.jpg);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner > div { /* This part is text layout */
+    padding: 2em;
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+.banner-press {    /* This part is just the text styling */
+    font-family: 'Helvetica Neue';
+    display: flex;
+    color: white;
+    font-size: 4ex;
+    letter-spacing: 3px;
+    text-shadow: 0px 0px 6px black;
+}
+
+#card-4 {
+    margin: 8em 5em 5em 5em;
+    display: flex;
+    flex-direction: row;
+} 
+
+#card-4 h3 {
+    font-size: 2em;
+    font-family: 'baskerville';
+    font-weight: lighter;
+    letter-spacing: 4px;
+    margin: 1.5ex;
+}
+
+#card-4 p {
+    margin: 2.5ex;
+}
+
+#card-5 {
+    margin: 5em 5em 5em 5em;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#card-5 h3 {
+    font-size: 2em;
+    font-family: 'baskerville';
+    font-weight: lighter;
+    letter-spacing: 4px;
+    margin: 1.5ex;
+}
+
+#card-5 p {
+    margin: 2.5ex;
+}
 
 
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #ddd;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1ex;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #555;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+#contact > div > h3 {
+    font-size: 2em;
+    font-family: 'baskerville';
+    font-weight: lighter;
+    letter-spacing: 4px;
+    margin: 2ex .1ex 2.5ex 0;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
 }
