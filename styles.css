@@ -21,27 +21,22 @@ nav {
 nav ul a {
     color: black;  /* color of nav bar (ghostwhite) */
     padding: .7em; /* button spacing*/
-    
 }
 
-nav a {
-    text-decoration: underline;
-    color: #eee;    /* color of nav #eee text*/
-}
 
 nav ul {
     display: flex;
     list-style: none;   /*this removes bullets */
-    text-shadow: 1px 1px grey;  /* this is the shadows for nav link */
 }
 
 
 nav ul a:hover {     /* this is the highlight for nav link */
     color: #eee;
+    background-color: black;
 }
 
 .hero-image {
-    background-image: url(images/image_02.jpg); /* retaining the overlay just incase linear-gradient(#FFFFFF) 2%, rgba(#FFFFFF) .5%,   */
+    background-image: url(images/Warehouse.jpg); /* retaining the overlay just incase linear-gradient(#FFFFFF) 2%, rgba(#FFFFFF) .5%,   */
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -135,7 +130,7 @@ nav ul a:hover {     /* this is the highlight for nav link */
 }
 
 #banner {  /* This part is for the photo */
-    background-image: url(images/IMG_3758.jpg);
+    background-image: url(images/ThesisLabs2.jpg);
     height: 100%;
     background-position: center;
     background-size: cover;
