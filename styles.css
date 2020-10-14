@@ -44,6 +44,24 @@ nav ul a:hover {     /* this is the highlight for nav link */
     position: relative;
 }
 
+.hero-image-maker {
+    background-image: url(images/proj-mgmt2.png);
+    height: 150%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.hero-image-buyer {
+    background-image: url(images/proj-mgmt.png);
+    height: 150%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
 .hero-text {
     text-align: left;
     position: absolute;
