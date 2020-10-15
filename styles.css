@@ -23,17 +23,18 @@ nav ul a {
     padding: .7em; /* button spacing*/
 }
 
-
 nav ul {
     display: flex;
     list-style: none;   /*this removes bullets */
 }
 
-
 nav ul a:hover {     /* this is the highlight for nav link */
     color: #eee;
-    background-color: black;
+    background-color: #222;
 }
+
+
+
 
 .hero-image {
     background-image: url(images/Warehouse.jpg); /* retaining the overlay just incase linear-gradient(#FFFFFF) 2%, rgba(#FFFFFF) .5%,   */
@@ -71,6 +72,7 @@ nav ul a:hover {     /* this is the highlight for nav link */
     color: white;
     font-size: 4ex;
     letter-spacing: 3px;
+    text-shadow: .2px .2px .5px black;
 }
 
 .hero-text h1 {
@@ -80,20 +82,22 @@ nav ul a:hover {     /* this is the highlight for nav link */
 }
 
 .hero-text button {
+    margin-top: 5px;
     border: none;
     outline: 0;
     display: inline-block;
-    padding: 10px 25px;
-    color: black;
-    background-color: #ddd;
+    padding: 10px 20px;
+    color: white;
+    background-color: #333;
     text-align: center;
     cursor: pointer;
-    font-size: .5ex;
+    font-size: .8ex;
 }
 
 .hero-text button:hover {
-    background-color: #555;
-    color: white;
+    background-color: ghostwhite;
+    color: black;
+    box-shadow: 5px 10px 18px #888888;
 }
 
 #card-1 ul {
@@ -114,13 +118,6 @@ nav ul a:hover {     /* this is the highlight for nav link */
 .card-1 {
     width: 650px;
     margin: 12em 5em 12em 5em;
-    /* background-color: whitesmoke;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.05); */
-}
-
-.card-1 img {
-    width: 100%;
-    height: auto;
 }
 
 .card-1 h3 {
@@ -134,16 +131,16 @@ nav ul a:hover {     /* this is the highlight for nav link */
     border: none;
     outline: 0;
     display: inline-block;
-    padding: 10px 25px;
+    padding: 12px 30px;
     color: black;
     background-color: #ddd;
     text-align: center;
     cursor: pointer;
-    font-size: 1ex;
+    font-size: 1.2ex;
 }
 
 .card-1 button:hover {
-    background-color: #555;
+    background-color: #222;
     color: white;
 }
 
@@ -195,6 +192,24 @@ nav ul a:hover {     /* this is the highlight for nav link */
     margin: 2.5ex;
 }
 
+#card-4 button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 12px 30px;
+    margin: 20px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.2ex;
+}
+
+#card-4 button:hover {
+    background-color: #222;
+    color: white;
+}
+
 #card-5 {
     margin: 5em 5em 5em 5em;
     display: flex;
@@ -212,6 +227,117 @@ nav ul a:hover {     /* this is the highlight for nav link */
 #card-5 p {
     margin: 2.5ex;
 }
+
+#card-5 button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 12px 30px;
+    margin: 20px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.2ex;
+}
+
+#card-5 button:hover {
+    background-color: #222;
+    color: white;
+}
+
+/* This one is the container size for gallery */
+#slides {
+    width: 1300px;
+    height: 1200px;
+    margin: auto;
+}
+
+.ms-slides__inner {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    transform: translate3d(0, 0, 0);
+    transition: 1000ms;
+}
+
+.ms-slides {
+    overflow: hidden;
+    position: relative;
+}
+
+.ms-slides__next-button, .ms-slides__prev-button {
+    display: block;
+    width: calc(40px - 8px);
+    height: calc(40px - 8px);
+    border-radius: 50%;;
+    background-color:rgba(255,255,255,0.5);
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid transparent;
+}
+
+.ms-slides__next-button:hover, 
+.ms-slides__prev-button:hover {
+    border: 4px solid #fff;
+}
+
+.ms-slides__next-button {
+    right: calc(1em - 4px);
+}
+
+.ms-slides__prev-button {
+    left: calc(1em - 4px);
+}
+
+.ms-slides__next-button::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: 4px solid #fff;
+    border-right: 4px solid #fff;
+    transform: translate(-2px, 0) rotate(45deg);
+}
+
+.ms-slides__prev-button::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-bottom: 4px solid #fff;
+    border-left: 4px solid #fff;
+    transform: translate(2px, 0) rotate(45deg);
+}
+
+.ms-slides__indicators {
+    list-style: none;
+    position: absolute;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    left: 50%;
+    bottom: 1em;
+    transform: translate(-50%, 0);
+}
+
+.ms-slides__indicators > li {
+    width: 16px;
+    height: 16px;
+    margin: 4px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+
+
 
 
 /* Style inputs with type="text", select elements and textareas */
