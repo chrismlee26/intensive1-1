@@ -5,7 +5,7 @@
 
 
 
-(function() {
+function() {
 
     // ---------------------------------------------------------
     // Define Constants 
@@ -134,7 +134,7 @@
         makeSlideshow(slideshows[i])
     }
   
-  })() // IIFE
+  }
   
   
   

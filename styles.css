@@ -33,9 +33,6 @@ nav ul a:hover {     /* this is the highlight for nav link */
     background-color: #222;
 }
 
-
-
-
 .hero-image {
     background-image: url(images/Warehouse.jpg); /* retaining the overlay just incase linear-gradient(#FFFFFF) 2%, rgba(#FFFFFF) .5%,   */
     height: 100%;
@@ -45,8 +42,17 @@ nav ul a:hover {     /* this is the highlight for nav link */
     position: relative;
 }
 
+.hero-image-about {
+    background-image: url(images/image_02.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 .hero-image-maker {
-    background-image: url(images/proj-mgmt2.png);
+    background-image: url(images/proj-mgmt2.jpg);
     height: 150%;
     background-position: top;
     background-repeat: no-repeat;
@@ -55,7 +61,7 @@ nav ul a:hover {     /* this is the highlight for nav link */
 }
 
 .hero-image-buyer {
-    background-image: url(images/proj-mgmt.png);
+    background-image: url(images/proj-mgmt2.jpg);
     height: 150%;
     background-position: top;
     background-repeat: no-repeat;
@@ -98,6 +104,24 @@ nav ul a:hover {     /* this is the highlight for nav link */
     background-color: ghostwhite;
     color: black;
     box-shadow: 5px 10px 18px #888888;
+}
+
+.hero-text-about {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4ex;
+    letter-spacing: 3px;
+    text-shadow: .4px .4px .8px black;
+}
+
+.hero-text-about h1 {
+    font-family: 'Baskerville';
+    font-weight: normal;
+    letter-spacing: 6px;
 }
 
 #card-1 ul {
@@ -143,6 +167,63 @@ nav ul a:hover {     /* this is the highlight for nav link */
     background-color: #222;
     color: white;
 }
+
+.about-title {
+    font-size: 5em;
+    font-family: 'baskerville';
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #444;
+    text-align: center;
+    margin: 2em;
+}
+
+.about-subtitle {
+    font-size: 2em;
+    font-family: 'helvetica neue';
+    margin: 2em 12em 4em 12em;
+}
+
+#card-about ul {
+    list-style: none;
+    margin: 0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.card-about {
+    width: 680px;
+    margin: 12em 5em 12em 5em;
+}
+
+.card-about h3 {
+    font-size: 3em;
+    font-family: 'baskerville';
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #444;
+}
+
+.card-about p {
+    font-size: 1.5em;
+    font-family: 'helvetica neue';
+    font-weight: lighter;
+    color: #444;
+    margin: 0;
+    padding: .25em;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
 
 #banner {  /* This part is for the photo */
     background-image: url(images/ThesisLabs2.jpg);
