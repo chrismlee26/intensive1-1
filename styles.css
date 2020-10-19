@@ -42,32 +42,13 @@ nav ul a:hover {     /* this is the highlight for nav link */
     position: relative;
 }
 
-.hero-image-about {
-    background-image: url(images/image_02.jpg);
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-
-.hero-image-maker1 {
-    background-image: url(images/About-8.png);
-    height: 600%;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
-}
-
-.hero-image-maker2 {
-    background-image: url(images/About-9.png);
-    height: 600%;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
+.image-maker1,
+.image-maker2,
+.image-maker3 {
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    right: 50%;
 }
 
 .hero-image-buyer {
@@ -111,6 +92,30 @@ nav ul a:hover {     /* this is the highlight for nav link */
 }
 
 .hero-text button:hover {
+    background-color: ghostwhite;
+    color: black;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.clicker {
+    display: flex;
+    justify-content: center;
+}
+
+.clicker button {
+    margin-top: 5px;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #333;
+    cursor: pointer;
+    font-size: 3ex;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.clicker button:hover {
     background-color: ghostwhite;
     color: black;
     box-shadow: 5px 10px 18px #888888;
@@ -398,15 +403,15 @@ input[type=submit]:hover {
     margin: 2ex .1ex 2.5ex 0;
 }
 
-#footer {
-    display: flex;
-    justify-content: center;
-}
-
 /* Styles for contact page */
 #contact {
     margin: 10ex 0ex 20ex 0ex;
     max-width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#footer {
     display: flex;
     justify-content: center;
 }
