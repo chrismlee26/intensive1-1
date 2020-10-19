@@ -24,8 +24,29 @@
 
       <br>
 
-      <hr/>
-      <hr/>
+      <div class="flex-container">
+        <section id=calc-main>
+            <h1 class="profit-calc">Profit Calculator:</h1>
+            <div id=profit-calc-text>
+                <ul>
+                    <li> Cost $</li>  
+                    <li> Margin %</li>
+                    <li> Unit Count #</li>
+                </ul>
+            <div id=profit-calc-inputs>
+                <ul>
+                    <input id="cost" placeholder="$$ Cost" min="0.00" type="number" onchange="calculateMargin()"> 
+                    <input id="margin" placeholder="%% Margin" min="10.00" type="number" onchange="calculateMargin()">
+                    <input id="units" placeholder="## units" min="1.00" type="number" onchange="calculateMargin()">
+                </ul>
+            </div>
+
+            <div id=calculator>
+                <h2 id=$>Net Profit: $</h2>
+                <h2 id="total"></h2>
+            </div>
+        </section>
+    </div>
 
       <br>
 

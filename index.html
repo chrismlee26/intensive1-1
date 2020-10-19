@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<head>
+  <head>
     <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <nav id="nav">
@@ -63,7 +64,7 @@
                 <p> ◦ Don’t pay until manufacturing starts. </p>
                 <p> ◦ Lower prices than traditional retail. </p>
                 <br/>
-                <button class="btn"><a onclick="location.replace('buyers.html')">E X P L O R E</a></button>
+                <button class="btn"><a onclick="location.replace('makers.html')">E X P L O R E</a></button>
             </li>
             <li class="card-about">
                 <div>
@@ -91,7 +92,7 @@
                 <p> ◦ Payments released based on your schedule. </p>
                 <p> ◦ Automated delivery when you're ready. </p>
                 <br/>               
-                <button class="btn"><a onclick="location.replace('login.html')">E X P L O R E</a></button>
+                <button class="btn"><a onclick="location.replace('makers.html')">E X P L O R E</a></button>
             </li>
         </ul>
     </section>
@@ -102,7 +103,16 @@
             </p>
             <p> —
             </p>
-            <button class="btn"><a onclick="location.replace('login.html')">E X P L O R E</a></button>
+
+            <!-- Button Modal broken on import :( -->
+            <button id="button-press"> E X P L O R E </button>
+            <div id="myModal" class="modal" style="display: none;">
+                <img id="myImg" class="img-responsive narrow" src="images/thesis-single-pager.png" alt="example">  
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+            </div>
         </div>
     </section>
     <section id="card-1">
@@ -111,19 +121,19 @@
                 <img src="images/test.png" alt="project-management" width="auto" height="350">
                 <h3>Project Management</h3>
                 <p> Tools to help you plan your project, calculate profit and establish milestones. </p>
-                <button class="btn"><a onclick="location.replace('login.html')">E X P L O R E</a></button>
+                <button class="btn"><a onclick="location.replace('makers.html')">E X P L O R E</a></button>
             </li>
                 <li class="card-1">
                 <img src="images/test2.png" alt="communication" width="auto" height="350"> 
                 <h3>Communication</h3>
                 <p> Automatically communicate with your buyers while making so they know what to expect. </p>
-                <button class="btn"><a onclick="location.replace('login.html')">E X P L O R E</a></button>
+                <button class="btn"><a onclick="location.replace('makers.html')">E X P L O R E</a></button>
             </li>
                 <li class="card-1">
                 <img src="images/creditcard.jpg" alt="escrow" width="auto" height="350">
                 <h3>Escrow</h3>
                 <p> Budget release schedule based on project milestones so everyone stays protected. </p>
-                <button class="btn"><a onclick="location.replace('login.html')">E X P L O R E</a></button>
+                <button class="btn"><a onclick="location.replace('makers.html')">E X P L O R E</a></button>
             </li>
         </ul>
     </section>
