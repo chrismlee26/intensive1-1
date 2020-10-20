@@ -15,6 +15,8 @@ styling, color and content.
 3. If possible some JS will be added for pop-up forms and an
 overall more responsive design were improvements could be made.
 
+<--- This is as far as I got --->
+
 4. Mobile wireframes will be added.
 
 5. Parallax through CSS will the final stage to make the page 
@@ -28,7 +30,8 @@ Most of what I was unable to code over the week I made as static
 wireframes in Adobe XD.
 
 The code is mostly simple HTML+CSS with a bit of Javascript in the
-form of a clicker button and a profit calculator. I will attempt
-to add a rotating gallery, modals for static images but this is
-dependant on troubleshooting for the day. 
+form of a clicker button and a profit calculator and a modal pop-up
+which somehow died during import. I will attempt to add a rotating 
+gallery, modals for static images but this is dependant on time for 
+the week. 
 
